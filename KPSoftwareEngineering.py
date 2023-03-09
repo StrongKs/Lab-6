@@ -5,6 +5,9 @@ def menu():
           "2. Decode\n"
           "3. Quit\n")
 
+# hi sydney, please make as decode function here and push it back
+def decode(string):
+    pass
 
 # add 3 to every digit and if its bigger then 9 return the %10
 def encode(string):
@@ -23,7 +26,7 @@ if __name__ == "__main__":
             input_encoded = encode(user_input)
             print("Your password has been encoded and stored!\n")
         elif menu_option == 2:
-            print("The encoded password is " + input_encoded + ", and the original password is " + user_input)
+            print("The encoded password is " + input_encoded + ", and the original password is " + decode(user_input))
             print()
         elif menu_option == 3:
             break
